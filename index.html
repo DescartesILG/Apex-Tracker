@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infinite Lagrange — Apex Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <h1 class="logo">Infinite Lagrange</h1>
+
+      <div class="filter">
+        <label for="classSelect">Ship Class</label>
+        <select id="classSelect">
+          <option value="">— Select class —</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="shipSelect">Ship</label>
+        <select id="shipSelect" disabled>
+          <option value="">— Select ship —</option>
+        </select>
+      </div>
+
+      <div class="note">Tip: edit data in <code>/data/*.js</code></div>
+    </aside>
+
+    <main class="content">
+      <div id="tilesContainer" class="tiles-container">
+        <div class="placeholder">Select a ship class and ship to view variants.</div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
